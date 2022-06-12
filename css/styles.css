@@ -665,6 +665,7 @@ li {
 
 .footer-soc-container {
   padding-top: 72px;
+  margin-right: 93px;
 }
 
 .footer-enjoy {
@@ -712,6 +713,68 @@ li {
   outline-style: none;
 }
 
+.footer-mail-submit {
+  padding-top: 72px;
+}
+
+.footer-submit-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-submit-container {
+  display: flex;
+}
+
+.footer-input-mail {
+  position: relative;
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+/* .footer-label-mail {
+  position: absolute;
+  padding-left: 16px;
+  padding-top: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+} */
+
+.footer-mail-btn {
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.footer-icon-send {
+  margin-left: 10px;
+}
+
 /* -------------------MODAL-WINDOW-------------------------- */
 
 .backdrop {
@@ -731,8 +794,8 @@ li {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 500px;
-  min-height: 600px;
+  min-width: 528px;
+  min-height: 581px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -756,6 +819,13 @@ li {
   background-color: transparent;
 }
 
+.modal-close-btn:hover .masters-soc-icon,
+.modal-close-btn:focus .masters-soc-icon {
+  width: 11px;
+  height: 11px;
+  color: var(--accent-color);
+}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -764,4 +834,46 @@ li {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.modal-container {
+  padding-left: 41px;
+  padding-right: 39px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-title-text {
+  padding-top: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.modal-contact-form {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.agreement-container {
+  /* padding-left: 54px;
+  padding-right: 51px; */
+  margin-bottom: 30px;
+}
+
+.modal-submit-btn {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 200px;
+  height: 50px;
 }
