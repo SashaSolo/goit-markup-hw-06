@@ -608,7 +608,6 @@ li {
 
 .footer {
   background-color: var(--background-color);
-
   padding-bottom: 60px;
 }
 
@@ -754,7 +753,7 @@ li {
   justify-content: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background: #2196f3;
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition-property: background-color;
@@ -775,7 +774,7 @@ li {
 .footer-input-mail:-webkit-autofill:hover,
 .footer-input-mail:-webkit-autofill:focus,
 .footer-input-mail:-webkit-autofill:active {
-  box-shadow: 0 0 0 30px var(--accent-color) inset !important;
+  box-shadow: 0 0 0 30px var(--accent-color) inset;
 }
 
 /* -------------------MODAL-WINDOW-------------------------- */
@@ -821,6 +820,12 @@ li {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
+}
+
+.masters-soc-icon {
+  transition-property: fill, width, height;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover .masters-soc-icon,
@@ -874,7 +879,9 @@ li {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  transition-property: 2500ms;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon-input:focus,
@@ -889,6 +896,9 @@ li {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:hover,
@@ -923,6 +933,9 @@ li {
   border-radius: 4px;
   resize: none;
   cursor: pointer;
+  transition-property: background-color, border-color, outline-style;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea:not(:placeholder-shown) {
@@ -970,9 +983,10 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property: background-color, box-shadow, transform, border;
-  transition-duration: 300ms;
-  transition-timing-function: linear;
+  transition-property: background-color, border-color, box-shadow, transform,
+    border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .custom-checkbox {
@@ -989,7 +1003,7 @@ li {
 
 .modal-check-icon {
   fill: transparent;
-  transition-property: background-color, box-shadow, border;
+  transition-property: fill;
   transition-duration: 350ms;
   transition-timing-function: linear;
 }
@@ -1033,13 +1047,16 @@ li {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background: #2196f3;
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-submit-btn:hover,
 .modal-submit-btn:focus {
-  background: #188ce8;
+  background-color: #188ce8;
 }
